@@ -5,7 +5,7 @@ release: replace
 	@component build
 	
 replace:
-	@cat ./css/font-awesome.css | sed -e 's/\.\.\/font\/../components\/timoxley-font-awesome\/font\//g' > ./release/font-awesome.css
+	@cat ./css/font-awesome.css | sed -e 's/\.\.\/font\//..\/components\/timoxley-font-awesome\/font\//g' > ./release/font-awesome.css
 
 components: component.json
 	@component install --dev
