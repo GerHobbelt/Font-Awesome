@@ -1,0 +1,18 @@
+{
+  "name": "font-awesome",
+  "repo": "FortAwesome/Font-Awesome",
+  "description": "Full suite of pictographic icons",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "styles": [
+    "css/font-awesome.css"
+  ],
+  "files": [
+    "font/fontawesome-webfont.eot",
+    "font/fontawesome-webfont.svg",
+    "font/fontawesome-webfont.ttf",
+    "font/fontawesome-webfont.woff"
+  ]
+}
