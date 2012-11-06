@@ -10,8 +10,8 @@ http://fortawesome.github.com/Font-Awesome/
 
 ## Usage
 
-Just add `timoxley/font-awesome` to your dependencies `component.json`
-dependencies, and font-awesome will be available in your `build.css`. 
+Just add `timoxley/font-awesome` to your `component.json`
+dependencies, and font-awesome will be available in your built css.
 
 ```html
 <i class="icon-star"></i>
