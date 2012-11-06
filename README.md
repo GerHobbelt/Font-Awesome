@@ -1,15 +1,23 @@
-#Font Awesome 2.0
+#Font Awesome 2.0 – Component Version
 ##the iconic font designed for use with Twitter Bootstrap
+
 
 The full suite of pictographic icons, examples, and documentation can be found at:
 http://fortawesome.github.com/Font-Awesome/
 
-##Contact
-- Email: dave@davegandy.com
-- Twitter: http://twitter.com/fortaweso_me
-- Work: Lead Product Designer @ http://kyru.us
+## Installation
+
+  $ component install timoxley/font-awesome
+
+## Usage
+
+Just add `timoxley/font-awesome` to your dependencies `component.json`
+dependencies, and font-awesome will be available in your `build.css`. 
+
+e.g. <i class="icon-star"></i>
 
 ##License
+
 Version 2.0 of the Font Awesome font, CSS, and LESS files are licensed under CC BY 3.0:
 http://creativecommons.org/licenses/by/3.0/
 A mention of 'Font Awesome - http://fortawesome.github.com/Font-Awesome'
