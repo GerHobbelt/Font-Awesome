@@ -1,0 +1,13 @@
+{
+  "name": "Font-Awesome"
+, "repo": "perfectt/Font-Awesome"
+, "description": "Font Awesome for component(1)"
+, "version": "3.0.2"
+, "styles": [ "css/font-awesome.css" ]
+, "fonts": [ 
+	 "font/fontawesome-webfont.eot"
+  , "font/fontawesome-webfont.svg"
+  , "font/fontawesome-webfont.woff"
+  , "font/FontAwesome.otf"
+  ]
+}
