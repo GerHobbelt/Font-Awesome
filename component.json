@@ -7,7 +7,7 @@
   "dependencies": {},
   "development": {},
   "styles": [
-    "css/font-awesome.css"
+    "font-awesome.css"
   ],
   "fonts": [
     "font/fontawesome-webfont.eot",
