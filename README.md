@@ -1,4 +1,4 @@
-#Font Awesome 2.0 – Component Version
+#Font Awesome 3.1.1 – Component Version
 ##the iconic font designed for use with Twitter Bootstrap
 
 The full suite of pictographic icons, examples, and documentation can be found at:
