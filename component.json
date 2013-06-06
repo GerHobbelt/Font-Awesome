@@ -5,9 +5,10 @@
 , "version": "3.0.2"
 , "styles": [ "css/font-awesome.css" ]
 , "fonts": [ 
-	 "font/fontawesome-webfont.eot"
+    "font/fontawesome-webfont.eot"
   , "font/fontawesome-webfont.svg"
   , "font/fontawesome-webfont.woff"
+  , "font/fontawesome-webfont.ttf"
   , "font/FontAwesome.otf"
   ]
 }
