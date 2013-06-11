@@ -17,14 +17,16 @@ SITE_CSS_DIRECTORY = assets/css
 SITE_LESS = ${SITE_LESS_DIRECTORY}/site.less
 SITE_CSS_MIN = ${SITE_CSS_DIRECTORY}/site.css
 
+LESSC = lessc
+
 build:
 	@echo "Compiling Less files"
 	@mkdir -p ${FA_CSS_DIRECTORY}
-	lessc ${FA_LESS_MODERN} > ${FA_CSS_MODERN}
-	lessc --compress ${FA_LESS_MODERN} > ${FA_CSS_MODERN_MIN}
-	lessc ${FA_LESS_IE7} > ${FA_CSS_IE7}
-	lessc --compress ${FA_LESS_IE7} > ${FA_CSS_IE7_MIN}
-	lessc --compress ${SITE_LESS} > ${SITE_CSS_MIN}
+	$(LESSC) ${FA_LESS_MODERN} > ${FA_CSS_MODERN}
+	$(LESSC) --compress ${FA_LESS_MODERN} > ${FA_CSS_MODERN_MIN}
+	$(LESSC) ${FA_LESS_IE7} > ${FA_CSS_IE7}
+	$(LESSC) --compress ${FA_LESS_IE7} > ${FA_CSS_IE7_MIN}
+	$(LESSC) --compress ${SITE_LESS} > ${SITE_CSS_MIN}
 
 
 default: build
