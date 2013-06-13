@@ -5,6 +5,8 @@
 *.swp
 *.db-journal
 
+*.zip
+
 .coverage
 .DS_Store
 .installed.cfg
