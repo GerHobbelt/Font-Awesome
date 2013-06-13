@@ -39,7 +39,7 @@
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased;   -- killing this fixes the clipping of the top of each character in Chrome */
   *margin-right: .3em;
 }
 [class^="icon-"]:before,
