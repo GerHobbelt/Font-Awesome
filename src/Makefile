@@ -1,5 +1,6 @@
 PATH := ../node_modules/.bin:$(PATH)
 
+FA_ROOT_DIRECTORY = assets/font-awesome
 FA_LESS_DIRECTORY = assets/font-awesome/less
 FA_CSS_DIRECTORY = assets/font-awesome/css
 
@@ -27,6 +28,8 @@ build:
 	$(LESSC) ${FA_LESS_IE7} > ${FA_CSS_IE7}
 	$(LESSC) --compress ${FA_LESS_IE7} > ${FA_CSS_IE7_MIN}
 	$(LESSC) --compress ${SITE_LESS} > ${SITE_CSS_MIN}
+	cp -r ${FA_ROOT_DIRECTORY}/* ../
+	cd assets && zip -r9 font-awesome.zip font-awesome
 
 
 default: build

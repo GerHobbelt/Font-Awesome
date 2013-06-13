@@ -2563,3 +2563,24 @@ icons:
     created:    3.2.0
     categories:
       - Web Application Icons
+
+  - name:       VK
+    id:         vk
+    unicode:    f189
+    created:    3.2.0
+    categories:
+      - Brand Icons
+
+  - name:       Weibo
+    id:         weibo
+    unicode:    f18a
+    created:    3.2.0
+    categories:
+      - Brand Icons
+
+  - name:       Renren
+    id:         renren
+    unicode:    f18b
+    created:    3.2.0
+    categories:
+      - Brand Icons
