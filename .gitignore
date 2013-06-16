@@ -30,3 +30,8 @@ node_modules
 
 src/website/settingslocal.py
 stunnel.log
+
+# Editor backup files
+*.bak
+*~
+
