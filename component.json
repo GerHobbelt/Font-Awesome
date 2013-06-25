@@ -1,8 +1,8 @@
 {
   "name": "Font-Awesome"
-, "repo": "perfectt/Font-Awesome"
-, "description": "Font Awesome for component(1)"
-, "version": "3.0.2"
+, "repo": "GerHobbelt/Font-Awesome"
+, "description": "Font Awesome"
+, "version": "3.2.1"
 , "styles": [ "css/font-awesome.css" ]
 , "fonts": [ 
     "font/fontawesome-webfont.eot"
