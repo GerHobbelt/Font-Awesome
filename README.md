@@ -6,8 +6,8 @@ Font Awesome is a full suite of 361 pictographic icons for easy scalable vector 
 maintained by [Dave Gandy](http://twitter.com/byscuits). Stay up to date [@fontawesome](http://twitter.com/fontawesome).
 
 Get started at http://fontawesome.io!
-   
-   
+
+
 ## License
 
 - The Font Awesome font is licensed under the SIL OFL 1.1:
@@ -30,8 +30,8 @@ Get started at http://fontawesome.io!
 - [v3.1.1 GitHub milestones](https://github.com/FortAwesome/Font-Awesome/issues?milestone=4&page=1&state=closed)
 - [v3.2.0 GitHub milestones](https://github.com/FortAwesome/Font-Awesome/issues?milestone=3&page=1&state=closed)
 - [v3.2.1 GitHub milestones](https://github.com/FortAwesome/Font-Awesome/issues?milestone=5&page=1&state=closed)
-   
-   
+
+
 ## Versioning
 
 Font Awesome will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered with the following format:
@@ -45,16 +45,16 @@ And constructed with the following guidelines:
 * Bug fixes and misc changes bumps the patch
 
 For more information on SemVer, please visit http://semver.org.
-   
-   
+
+
 ## Author
 
 - Email: dave@fontawesome.io
 - Twitter: http://twitter.com/byscuits
 - GitHub: https://github.com/davegandy
 - Work: Lead Product Designer @ http://kyru.us
-   
-   
+
+
 ## Component
 
 To include as a [component](http://github.com/component/component), just run
@@ -66,8 +66,8 @@ Or add
     "FortAwesome/Font-Awesome": "*"
 
 to the `dependencies` in your `component.json`.
-   
-   
+
+
 ## Hacking on Font Awesome
 
 From the root of the repository, install the tools used to develop.
