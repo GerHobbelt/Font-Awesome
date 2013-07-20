@@ -1,4 +1,8 @@
 
+.PHONY: all site install
+
+
+
 all: site
 
 
@@ -15,4 +19,5 @@ site:
 install:
 	bundle install
 	npm install
+
 
