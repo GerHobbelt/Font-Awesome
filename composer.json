@@ -8,12 +8,12 @@
       "name": "Dave Gandy",
       "email": "dave@fontawesome.io",
       "role": "Developer",
-      "homepage": "http://twitter.com/byscuits"
+      "homepage": "http://twitter.com/davegandy"
     }
   ],
   "extra": {
     "branch-alias": {
-      "dev-master": "3.2.x-dev"
+      "dev-master": "4.0.x-dev"
     }
   },
   "license": [
