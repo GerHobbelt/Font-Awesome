@@ -1,8 +1,8 @@
 {
-  "name": "Font-Awesome",
+  "name": "font-awesome",
   "repo": "GerHobbelt/Font-Awesome",
   "description": "Font Awesome",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "keywords": [],
   "dependencies": {},
   "development": {},
@@ -11,10 +11,10 @@
     "css/font-awesome.css"
   ],
   "fonts": [
-    "font/fontawesome-webfont.eot",
-    "font/fontawesome-webfont.svg",
-    "font/fontawesome-webfont.ttf",
-    "font/fontawesome-webfont.woff",
-    "font/FontAwesome.otf"
+    "fonts/fontawesome-webfont.eot",
+    "fonts/fontawesome-webfont.svg",
+    "fonts/fontawesome-webfont.ttf",
+    "fonts/fontawesome-webfont.woff",
+    "fonts/FontAwesome.otf"
   ]
 }

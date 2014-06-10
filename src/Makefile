@@ -1,10 +1,14 @@
+---
+---
 PATH := ../node_modules/.bin:$(PATH)
 
 FA_ROOT_DIRECTORY = assets/font-awesome
 FA_LESS_DIRECTORY = assets/font-awesome/less
+FA_SCSS_DIRECTORY = assets/font-awesome/scss
 FA_CSS_DIRECTORY = assets/font-awesome/css
 
 FA_LESS_MODERN = ${FA_LESS_DIRECTORY}/font-awesome.less
+FA_SCSS_MODERN = ${FA_SCSS_DIRECTORY}/font-awesome.scss
 
 FA_CSS_MODERN = ${FA_CSS_DIRECTORY}/font-awesome.css
 FA_CSS_MODERN_MIN = ${FA_CSS_DIRECTORY}/font-awesome.min.css
@@ -13,18 +17,19 @@ SITE_LESS_DIRECTORY = assets/less
 SITE_CSS_DIRECTORY = assets/css
 
 SITE_LESS = ${SITE_LESS_DIRECTORY}/site.less
-SITE_CSS_MIN = ${SITE_CSS_DIRECTORY}/site.css
+SITE_CSS = ${SITE_CSS_DIRECTORY}/site.css
 
 LESSC = lessc
 
 build:
 	@echo "Compiling Less files"
 	@mkdir -p ${FA_CSS_DIRECTORY}
+
 	$(LESSC) ${FA_LESS_MODERN} > ${FA_CSS_MODERN}
 	$(LESSC) --compress ${FA_LESS_MODERN} > ${FA_CSS_MODERN_MIN}
 	$(LESSC) --compress ${SITE_LESS} > ${SITE_CSS_MIN}
 	cp -r ${FA_ROOT_DIRECTORY}/* ../
-	cd assets && zip -r9 font-awesome.zip font-awesome
+	cd assets && mv font-awesome font-awesome-{{ site.fontawesome.version }} && zip -r9 font-awesome-{{ site.fontawesome.version }}.zip font-awesome-{{ site.fontawesome.version }} && mv font-awesome-{{ site.fontawesome.version }} font-awesome
 
 
 default: build

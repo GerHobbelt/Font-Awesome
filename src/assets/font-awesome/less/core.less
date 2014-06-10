@@ -1,110 +1,15 @@
 ---
 ---
-/* FONT AWESOME CORE
- * -------------------------- */
 
-.{{ site.fontawesome.css_prefix }} {
-  .icon-FontAwesome();
-}
-
-
-/* makes the font 33% larger relative to the icon container */
-.{{ site.fontawesome.css_prefix }}-lg {
-  font-size: (4em / 3);
-  line-height: (3em / 4);
-  vertical-align: -10%;
-}
-/* increased font size for icon-lg */
-.{{ site.fontawesome.css_prefix }} {
-  &.{{ site.fontawesome.css_prefix }}-fixed-width {
-    display: inline-block;
-    width: (16em / 14);
-    padding-right: (4em / 14);
-    text-align: right;
-    &.{{ site.fontawesome.css_prefix }}-lg {
-      width: (20em / 14);
-    }
-  }
-}
-
-
-// Icon UL & LI
+// Base Class Definition
 // -------------------------
 
-.{{ site.fontawesome.css_prefix }}-ul {
-  padding-left: 0;
-  margin-left: @icons-li-width;
-  list-style-type: none;
-
-  > li { position: relative; }
-}
-.{{ site.fontawesome.css_prefix }}-li {
-  position: absolute;
-  left: -@icons-li-width;
-  width: @icons-li-width;
-  line-height: inherit;
-  text-align: center;
-}
-
-// allows usage of the hide class directly on font awesome icons
-.{{ site.fontawesome.css_prefix }}.hide { display: none; }
-
-.{{ site.fontawesome.css_prefix }}-muted { color: @iconMuted; }
-.{{ site.fontawesome.css_prefix }}-light { color: @iconLight; }
-.{{ site.fontawesome.css_prefix }}-dark { color: @iconDark; }
-
-
-// Icon Borders
-// -------------------------
-
-.{{ site.fontawesome.css_prefix }}-border {
-  padding: .2em .25em .15em;
-  border: solid 1px @borderColor;
-  .border-radius(3px);
-}
-
-// Icon Sizes
-// -------------------------
-
-.{{ site.fontawesome.css_prefix }}-2x {
-  font-size: 2em;
-  &.{{ site.fontawesome.css_prefix }}-border {
-    border-width: 2px;
-    .border-radius(4px);
-  }
-}
-.{{ site.fontawesome.css_prefix }}-3x {
-  font-size: 3em;
-  &.{{ site.fontawesome.css_prefix }}-border {
-    border-width: 3px;
-    .border-radius(5px);
-  }
-}
-.{{ site.fontawesome.css_prefix }}-4x {
-  font-size: 4em;
-  &.{{ site.fontawesome.css_prefix }}-border {
-    border-width: 4px;
-    .border-radius(6px);
-  }
-}
-
-.{{ site.fontawesome.css_prefix }}-5x {
-  font-size: 5em;
-  &.{{ site.fontawesome.css_prefix }}-border {
-    border-width: 5px;
-    .border-radius(7px);
-  }
-}
-
-
-// Floats & Margins
-// -------------------------
-
-// Quick floats
-.pull-right { float: right; }
-.pull-left { float: left; }
-
-.{{ site.fontawesome.css_prefix }} {
-  &.pull-left { margin-right: .3em; }
-  &.pull-right { margin-left: .3em; }
+.@{fa-css-prefix} {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
