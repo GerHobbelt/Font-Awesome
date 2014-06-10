@@ -7,6 +7,10 @@
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  //-moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;   -- killing this fixes the clipping of the top of each character in Chrome 
+  // See also: 
+  //     http://www.usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+  //     http://daneden.me/2012/01/why-do-my-fonts-look-so-bad-in-x/
 }
