@@ -155,6 +155,7 @@ icons:
       - agree
       - accept
       - confirm
+      - tick
     categories:
       - Web Application Icons
 
@@ -169,6 +170,7 @@ icons:
       - close
       - exit
       - x
+      - cross
     categories:
       - Web Application Icons
 
@@ -340,6 +342,7 @@ icons:
     created:    1.0
     filter:
       - reload
+      - sync
     categories:
       - Web Application Icons
       - Spinner Icons
@@ -672,6 +675,9 @@ icons:
     created:    1.0
     filter:
       - raindrop
+      - waterdrop
+      - drop
+      - droplet
     categories:
       - Web Application Icons
 
@@ -1304,6 +1310,7 @@ icons:
       - bar-chart-o
     filter:
       - graph
+      - analytics
     categories:
       - Web Application Icons
       - Chart Icons
@@ -1603,6 +1610,7 @@ icons:
       - protect
       - admin
       - password
+      - lock
     categories:
       - Web Application Icons
 
@@ -2093,6 +2101,7 @@ icons:
       - more
       - dropdown
       - menu
+      - triangle down
     categories:
       - Directional Icons
 
@@ -2100,6 +2109,8 @@ icons:
     id:         caret-up
     unicode:    f0d8
     created:    2.0
+    filter:
+      - triangle up
     categories:
       - Directional Icons
 
@@ -2110,6 +2121,7 @@ icons:
     filter:
       - previous
       - back
+      - triangle left
     categories:
       - Directional Icons
 
@@ -2120,6 +2132,7 @@ icons:
     filter:
       - next
       - forward
+      - triangle right
     categories:
       - Directional Icons
 
@@ -2303,6 +2316,7 @@ icons:
     created:    3.0
     filter:
       - transfer
+      - arrows
     categories:
       - Web Application Icons
       - Directional Icons
@@ -4426,6 +4440,8 @@ icons:
     id:         header
     unicode:    f1dc
     created:    4.1
+    filter:
+      - heading
     categories:
       - Text Editor Icons
 
@@ -4522,6 +4538,8 @@ icons:
     id:         newspaper-o
     unicode:    f1ea
     created:    4.2
+    filter:
+      - press
     categories:
       - Web Application Icons
 
@@ -4584,6 +4602,8 @@ icons:
     id:         cc-amex
     unicode:    f1f3
     created:    4.2
+    filter:
+      - amex
     categories:
       - Brand Icons
       - Payment Icons
@@ -4622,6 +4642,11 @@ icons:
     id:         trash
     unicode:    f1f8
     created:    4.2
+    filter:
+      - garbage
+      - delete
+      - remove
+      - hide
     categories:
       - Web Application Icons
 
@@ -4667,6 +4692,9 @@ icons:
     categories:
       - Web Application Icons
       - Chart Icons
+    filter:
+      - graph
+      - analytics
 
 
   - name:       Pie Chart
@@ -4676,6 +4704,9 @@ icons:
     categories:
       - Web Application Icons
       - Chart Icons
+    filter:
+      - graph
+      - analytics
 
   - name:       Line Chart
     id:         line-chart
@@ -4684,6 +4715,9 @@ icons:
     categories:
       - Web Application Icons
       - Chart Icons
+    filter:
+      - graph
+      - analytics
 
   - name:       last.fm
     id:         lastfm
@@ -5061,6 +5095,9 @@ icons:
     id:         user-plus
     unicode:    f234
     created:    4.3
+    filter:
+      - sign up
+      - signup
     categories:
       - Web Application Icons
 
