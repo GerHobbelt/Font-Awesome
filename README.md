@@ -7,7 +7,7 @@ created and maintained by [Dave Gandy](https://twitter.com/davegandy).
 Stay up to date with the latest release and announcements on Twitter:
 [@fontawesome](https://twitter.com/fontawesome).
 
-Get started at http://fontawesome.io!
+Get started at <http://fontawesome.io>!
 
 
 ## License
@@ -110,7 +110,7 @@ Build the project and documentation:
 
     $ bundle exec jekyll build
 
-Or serve it on a local server on http://localhost:7998/Font-Awesome/:
+Or serve it on a local server on `http://localhost:7998/Font-Awesome/`:
 
     $ bundle exec jekyll -w serve
 
