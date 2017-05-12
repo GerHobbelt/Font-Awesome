@@ -6,9 +6,12 @@
   font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration
   font-size: inherit; // can't have font-size inherit on line above, so need to override
   text-rendering: auto; // optimizelegibility throws things off #1094
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
+  //-moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;   -- killing this fixes the clipping of the top of each character in Chrome 
+  // See also: 
+  //     http://www.usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+  //     http://daneden.me/2012/01/why-do-my-fonts-look-so-bad-in-x/
 }
 
 @mixin fa-icon-rotate($degrees, $rotation) {
