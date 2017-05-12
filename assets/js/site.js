@@ -1,38 +1,60 @@
-$(function() {
+$(function () {
+  $("#newsletter").validate();
+
+  var ads = [
+    {
+      quote: "Pre-order and get Font Awesome 5 Pro and <strong>ALL</strong> stretch goals for just $40!",
+      class: "fa5",
+      url: "http://five.fontawesome.com",
+      btn_text: "Pre-order FA Pro! &nbsp;<i class='fa fa-external-link'></i>",
+    },
+  ];
+
+  selectAd();
+
   // start the icon carousel
-  $('#iconCarousel').carousel({
+  $('#icon-carousel').carousel({
     interval: 5000
   });
 
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
 
+  if (storageAvailable('localStorage') && !localStorage.seenFA5Modal2) {
+    $('#modal-fa5')
+      .modal('toggle')
+      .on('hidden.bs.modal', function (e) {
+        $('#fa5-iframe').remove();
+      });
+    ;
+  }
 
+  if (storageAvailable('localStorage')) {
+    localStorage.seenFA5Modal2 = true;
+  	// Yippee! We can use localStorage awesomeness
+  }
 
-  // make code pretty
-//  $('pre').addClass('prettyprint');
-//  window.prettyPrint && prettyPrint();
+  function storageAvailable(type) {
+  	try {
+  		var storage = window[type],
+  			x = '__storage_test__';
+  		storage.setItem(x, x);
+  		storage.removeItem(x);
+  		return true;
+  	}
+  	catch(e) {
+  		return false;
+  	}
+  }
 
-  // Disable links with href="#" inside <section>, so users can click on them
-  // to preview :active state without being scrolled up to the top of the page.
-//  $('section a[href="#"]').click(function(e) {
-//    e.preventDefault();
-//    e.stopPropagation();
-//  });
+  function selectAd() {
+    random_number = Math.floor(Math.random() * ads.length);
+    random_ad = ads[random_number];
 
-//  // inject twitter & github counts
-//  $.ajax({
-//    url: 'http://api.twitter.com/1/users/show.json',
-//    data: {screen_name: 'fortaweso_me'},
-//    dataType: 'jsonp',
-//    success: function(data) {
-//      $('#followers').html(data.followers_count);
-//    }
-//  });
-//  $.ajax({
-//    url: 'https://api.github.com/repos/fortawesome/Font-Awesome',
-//    dataType: 'jsonp',
-//    success: function(data) {
-//      $('#watchers').html(data.data.watchers);
-//      $('#forks').html(data.data.forks);
-//    }
-//  });
+    $('#banner').addClass(random_ad.class);
+    $('#rotating-message').html(random_ad.quote);
+    $('#rotating-url').attr("href", random_ad.url);
+    $('#rotating-url').html(random_ad.btn_text);
+    $('#banner').collapse('show');
+  }
 });

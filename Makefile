@@ -1,9 +1,12 @@
 PATH := ../node_modules/.bin:$(PATH)
 
+FA_ROOT_DIRECTORY = assets/font-awesome
 FA_LESS_DIRECTORY = assets/font-awesome/less
+FA_SCSS_DIRECTORY = assets/font-awesome/scss
 FA_CSS_DIRECTORY = assets/font-awesome/css
 
 FA_LESS_MODERN = ${FA_LESS_DIRECTORY}/font-awesome.less
+FA_SCSS_MODERN = ${FA_SCSS_DIRECTORY}/font-awesome.scss
 FA_LESS_IE7 = ${FA_LESS_DIRECTORY}/font-awesome-ie7.less
 
 FA_CSS_MODERN = ${FA_CSS_DIRECTORY}/font-awesome.css
@@ -27,6 +30,12 @@ build:
 	$(LESSC) ${FA_LESS_IE7} > ${FA_CSS_IE7}
 	$(LESSC) --compress ${FA_LESS_IE7} > ${FA_CSS_IE7_MIN}
 	$(LESSC) --compress ${SITE_LESS} > ${SITE_CSS_MIN}
+	#
+	# cp -r ${FA_ROOT_DIRECTORY}/* ../
+	# mv README.md-nobuild ../README.md
+	# cd assets && mv font-awesome font-awesome-4.7.0 && zip -r9 font-awesome-4.7.0.zip font-awesome-4.7.0 && mv font-awesome-4.7.0 font-awesome
+	#
+	# find .. -type f ! -perm 644 -exec chmod 644 {} \;
 
 
 default: build
