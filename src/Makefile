@@ -25,14 +25,15 @@ build:
 	@echo "Compiling Less files"
 	@mkdir -p ${FA_CSS_DIRECTORY}
 
-	$(LESSC) ${FA_LESS_MODERN} > ${FA_CSS_MODERN}
-	$(LESSC) --compress ${FA_LESS_MODERN} > ${FA_CSS_MODERN_MIN}
-	$(LESSC) --compress ${SITE_LESS} > ${SITE_CSS_MIN}
-	cp -r ${FA_ROOT_DIRECTORY}/* ../
-	mv README.md-nobuild ../README.md
-	cd assets && mv font-awesome font-awesome-{{ site.fontawesome.version }} && zip -r9 font-awesome-{{ site.fontawesome.version }}.zip font-awesome-{{ site.fontawesome.version }} && mv font-awesome-{{ site.fontawesome.version }} font-awesome
-
-	find .. -type f ! -perm 644 -exec chmod 644 {} \;
+	$(LESSC) --autoprefix="last 2 versions, Firefox ESR, ie 9" ${FA_LESS_MODERN} > ${FA_CSS_MODERN}
+	$(LESSC) --autoprefix="last 2 versions, Firefox ESR, ie 9" --compress ${FA_LESS_MODERN} > ${FA_CSS_MODERN_MIN}
+	$(LESSC) --autoprefix="last 2 versions, Firefox ESR, ie 9" --compress ${SITE_LESS} > ${SITE_CSS_MIN}
+	#
+	#cp -r ${FA_ROOT_DIRECTORY}/* ../
+	#mv README.md-nobuild ../README.md
+	#cd assets && mv font-awesome font-awesome-{{ site.fontawesome.version }} && zip -r9 font-awesome-{{ site.fontawesome.version }}.zip font-awesome-{{ site.fontawesome.version }} && mv font-awesome-{{ site.fontawesome.version }} font-awesome
+	#
+	#find .. -type f ! -perm 644 -exec chmod 644 {} \;
 
 default: build
 

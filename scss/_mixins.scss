@@ -12,6 +12,10 @@
   // See also: 
   //     http://www.usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
   //     http://daneden.me/2012/01/why-do-my-fonts-look-so-bad-in-x/
+
+  /* autoprefixer: off */
+  transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+  /* autoprefixer: on */
 }
 
 @mixin fa-icon-rotate($degrees, $rotation) {
