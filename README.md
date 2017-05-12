@@ -1,4 +1,4 @@
-# [Font Awesome v4.7.0](http://fontawesome.io)
+# [Font Awesome v4.7.0](http://fontawesome.io) [![Changelog #226](https://img.shields.io/badge/changelog-%23226-9E978E.svg)](https://changelog.com/podcast/226)
 
 ### The iconic font and CSS framework
 
@@ -26,7 +26,6 @@ Get started at http://fontawesome.io!
 ## Changelog
 
 - [v4.7.0 GitHub pull request](https://github.com/FortAwesome/Font-Awesome/pull/10012)
-- [v4.6.3 GitHub pull request](https://github.com/FortAwesome/Font-Awesome/pull/9189)
 - [v4.6.3 GitHub pull request](https://github.com/FortAwesome/Font-Awesome/pull/9189)
 - [v4.6.2 GitHub pull request](https://github.com/FortAwesome/Font-Awesome/pull/9117)
 - [v4.6.1 GitHub pull request](https://github.com/FortAwesome/Font-Awesome/pull/8962)
