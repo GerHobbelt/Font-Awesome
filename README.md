@@ -1,4 +1,4 @@
-# [Font Awesome v4.6.0](http://fontawesome.io)
+# [Font Awesome v4.6.1](http://fontawesome.io)
 
 ### The iconic font and CSS framework
 
@@ -25,6 +25,7 @@ Get started at http://fontawesome.io!
 
 ## Changelog
 
+- [v4.6.1 GitHub pull request](https://github.com/FortAwesome/Font-Awesome/pull/8962)
 - [v4.6.0 GitHub milestones](https://github.com/FortAwesome/Font-Awesome/issues?q=milestone%3A4.6.0+is%3Aclosed)
 - [v4.5.0 GitHub milestones](https://github.com/FortAwesome/Font-Awesome/issues?q=milestone%3A4.5.0+is%3Aclosed)
 - [v4.4.0 GitHub milestones](https://github.com/FortAwesome/Font-Awesome/issues?q=milestone%3A4.4.0+is%3Aclosed)
